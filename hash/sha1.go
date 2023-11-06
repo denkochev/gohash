@@ -1,12 +1,6 @@
 package hash
 
-const (
-	h0 = 0x67452301
-	h1 = 0xEFCDAB89
-	h2 = 0x98BADCFE
-	h3 = 0x10325476
-	h4 = 0xC3D2E1F0
-)
+import "fmt"
 
 func SHA1(input []byte) []byte {
 	var blocks [][64]byte
@@ -23,6 +17,23 @@ func SHA1(input []byte) []byte {
 		}
 		blocks = append(blocks, currentBlock)
 		// THIS CODE WAS TESTED WITH TEST CASE [http://book.itep.ru/6/sha1.htm]
+	}
+	// initialize buffers init
+	// h0 := 0x67452301
+	// h1 := 0xEFCDAB89
+	// h2 := 0x98BADCFE
+	// h3 := 0x10325476
+	// h4 := 0xC3D2E1F0
+	// processing blocks
+	for _, chunk := range blocks {
+		var W [80]uint32
+		for i, j := 0, 0; i < 64; i, j = i+4, j+1 {
+			W[j] = (uint32(chunk[i]) << 24) | (uint32(chunk[i+1]) << 16) | (uint32(chunk[i+2]) << 8) | uint32(chunk[i+3])
+			fmt.Printf("%x\n", W[j])
+			fmt.Println("----------------")
+		}
+		fmt.Printf("%x", W)
+		// THIS CODE WAS TESTED
 	}
 
 	return input
