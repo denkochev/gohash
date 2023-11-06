@@ -2,9 +2,8 @@ package hash
 
 import "fmt"
 
-func SHA1(input []byte) []byte {
+func SHA1(input []byte) [20]byte {
 	var blocks [][64]byte
-
 	// preparations
 	if len(input) < 56 {
 		var currentBlock [64]byte
@@ -16,38 +15,96 @@ func SHA1(input []byte) []byte {
 			currentBlock[i] = binaryLength[j]
 		}
 		blocks = append(blocks, currentBlock)
-		// THIS CODE WAS TESTED WITH TEST CASE [http://book.itep.ru/6/sha1.htm]
+		// THIS STEP WAS TESTED WITH TEST CASE [http://book.itep.ru/6/sha1.htm]
 	}
-	// initialize buffers init
-	// h0 := 0x67452301
-	// h1 := 0xEFCDAB89
-	// h2 := 0x98BADCFE
-	// h3 := 0x10325476
-	// h4 := 0xC3D2E1F0
+	// initialize buffers
+	var h0, h1, h2, h3, h4 uint32 = 0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0
 	// processing blocks
 	for _, chunk := range blocks {
 		var W [80]uint32
+		// fill first 16 words from chunk
 		for i, j := 0, 0; i < 64; i, j = i+4, j+1 {
 			W[j] = (uint32(chunk[i]) << 24) | (uint32(chunk[i+1]) << 16) | (uint32(chunk[i+2]) << 8) | uint32(chunk[i+3])
-			fmt.Printf("%x\n", W[j])
-			fmt.Println("----------------")
+			// fmt.Printf("%x\n", W[j])
+			// fmt.Println("----------------")
 		}
-		fmt.Printf("%x", W)
-		// THIS CODE WAS TESTED
+		// THIS STEP WAS TESTED
+		// extend from 16 to 80 words
+		for i := 16; i < 80; i++ {
+			W[i] = cyclicLeftShift((W[i-3] ^ W[i-8] ^ W[i-14] ^ W[i-16]), 1) // CIRLCE LEFT SHIFT! NOT JUST LEFT SHIFT !
+		}
+		// initialize working vars
+		a, b, c, d, e := h0, h1, h2, h3, h4
+		// MAIN LOOP
+		for i := 0; i < 80; i++ {
+			var K, F uint32
+			switch {
+			case i >= 0 && i <= 19:
+				F = (b & c) | ((^b) & d)
+				K = 0x5A827999
+			case i >= 20 && i <= 39:
+				F = b ^ c ^ d
+				K = 0x6ED9EBA1
+			case i >= 40 && i <= 59:
+				F = (b & c) | (b & d) | (c & d)
+				K = 0x8F1BBCDC
+			case i >= 60 && i <= 79:
+				F = b ^ c ^ d
+				K = 0xCA62C1D6
+			}
+
+			temp := (cyclicLeftShift(a, 5)) + F + e + K + W[i] // CIRLCE LEFT SHIFT! NOT JUST LEFT SHIFT !
+			e = d
+			d = c
+			c = cyclicLeftShift(b, 30) // CIRLCE LEFT SHIFT! NOT JUST LEFT SHIFT !
+			b = a
+			a = temp
+		}
+		// ADD CHUNK TO THE RESULT/NEXT-OPER.
+		h0 = h0 + a
+		h1 = h1 + b
+		h2 = h2 + c
+		h3 = h3 + d
+		h4 = h4 + e
 	}
 
-	return input
+	var result [20]byte
+	for i := 0; i < 20; i += 4 {
+		var h uint32
+		if i == 0 {
+			h = h0
+		} else if i == 4 {
+			h = h1
+		} else if i == 8 {
+			h = h2
+		} else if i == 12 {
+			h = h3
+		} else if i == 16 {
+			h = h4
+		}
+
+		result[i] = byte(h >> 24)
+		result[i+1] = byte(h >> 16)
+		result[i+2] = byte(h >> 8)
+		result[i+3] = byte(h)
+	}
+	fmt.Printf("%x", result)
+	return result
 }
 
 /*
 HELPERS
 */
 func getBinaryLength(length int) [8]byte {
-	// constant for amount of right shift
+	// constant for amount of required shift
 	right := [8]int{56, 48, 40, 32, 24, 16, 8, 0}
 	var binary64bitlength [8]byte
 	for i := 0; i < 8; i++ {
 		binary64bitlength[i] = uint8(length >> right[i])
 	}
 	return binary64bitlength
+}
+
+func cyclicLeftShift(value uint32, shift int) uint32 {
+	return (value << shift) | (value >> (32 - shift))
 }
