@@ -1,7 +1,6 @@
 package hash
 
 import (
-	"fmt"
 	"os"
 	"testing"
 )
@@ -26,7 +25,7 @@ func Test_getBinaryLength(t *testing.T) {
 		testInput := test.input
 
 		result := getBinaryLength(len(testInput) * 8)
-		fmt.Println(result)
+
 		if result != test.result {
 			t.Errorf("For: %d Expected:- 0x%X, but got - 0x%X", test.input, test.result, result)
 		}
