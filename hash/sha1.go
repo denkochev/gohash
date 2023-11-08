@@ -1,50 +1,35 @@
 package hash
 
-import "fmt"
-
 func SHA1(input []byte) [20]byte {
 	var blocks [][64]byte
 	// preparations
-	if len(input) < 56 {
-		var currentBlock [64]byte
-		copy(currentBlock[:], input)
-		currentBlock[len(input)] = 1 << 7 // add 1 bit to the end
-
+	var currentBlock [64]byte
+	iterator := 0
+	for i := 0; i < len(input); i, iterator = i+1, iterator+1 {
+		if iterator == 64 {
+			blocks = append(blocks, currentBlock)
+			currentBlock = [64]byte{}
+			iterator = 0
+		}
+		currentBlock[iterator] = input[i]
+	}
+	// https://ru.wikipedia.org/wiki/SHA-1 [Инициализация]
+	if iterator <= 55 { // IF INPUT < 448 BIT
+		currentBlock[iterator] = 1 << 7
 		fillLastBitsWithInputLength(&currentBlock, len(input))
-
 		blocks = append(blocks, currentBlock)
-		// THIS STEP WAS TESTED WITH TEST CASE [http://book.itep.ru/6/sha1.htm]
-		// UPD. TESTED WITH EMPTY INPUT
-	} else {
-		var currentBlock [64]byte
-		iterator := 0
-		for i := 0; i < len(input); i, iterator = i+1, iterator+1 {
-			if iterator == 64 {
-				blocks = append(blocks, currentBlock)
-				currentBlock = [64]byte{}
-				iterator = 0
-			}
-			currentBlock[iterator] = input[i]
-		}
-		fmt.Println(iterator)
-		// https://ru.wikipedia.org/wiki/SHA-1 [Инициализация]
-		if iterator < 55 {
-			currentBlock[iterator] = 1 << 7
-			fillLastBitsWithInputLength(&currentBlock, len(input))
-			blocks = append(blocks, currentBlock)
-		} else if iterator == 64 {
-			blocks = append(blocks, currentBlock)
-			currentBlock = [64]byte{}
-			currentBlock[0] = 1 << 7
-			fillLastBitsWithInputLength(&currentBlock, len(input))
-			blocks = append(blocks, currentBlock)
-		} else {
-			currentBlock[iterator] = 1 << 7
-			blocks = append(blocks, currentBlock)
-			currentBlock = [64]byte{}
-			fillLastBitsWithInputLength(&currentBlock, len(input))
-			blocks = append(blocks, currentBlock)
-		}
+	} else if iterator == 64 { // IF INPUT == MOD 512
+		blocks = append(blocks, currentBlock)
+		currentBlock = [64]byte{}
+		currentBlock[0] = 1 << 7
+		fillLastBitsWithInputLength(&currentBlock, len(input))
+		blocks = append(blocks, currentBlock)
+	} else { // IF INPUT > 448 BIT
+		currentBlock[iterator] = 1 << 7
+		blocks = append(blocks, currentBlock)
+		currentBlock = [64]byte{}
+		fillLastBitsWithInputLength(&currentBlock, len(input))
+		blocks = append(blocks, currentBlock)
 	}
 	// initialize buffers
 	var h0, h1, h2, h3, h4 uint32 = 0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0
