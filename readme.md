@@ -49,15 +49,15 @@ This code was tested on rich amount of different data. This package includes tes
 
 There is benchmark test for this implementation and implementation from crypto/sha1 lib. Test is in ./hash/bench_test.go file. You can run these test by call `go test -bench . -benchmem`
 
-Results:
+Results for 1,13 GB (1 222 355 456 bytes) file:
 ```
 goos: windows
 goarch: amd64
 pkg: gohash/hash
 cpu: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
-BenchmarkMySHA1-8        1291868               904.8 ns/op           256 B/op          7 allocs/op
-BenchmarkLibSHA1-8       3653446               296.1 ns/op            96 B/op          3 allocs/op
+BenchmarkMySHA1-8              1        8904308200 ns/op        8391299920 B/op      168 allocs/op
+BenchmarkLibSHA1-8             1        1460139800 ns/op        1222390032 B/op       20 allocs/op
 PASS
-ok      gohash/hash     4.045s
+ok      gohash/hash     11.268s
 
 ```
