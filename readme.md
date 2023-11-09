@@ -61,3 +61,38 @@ PASS
 ok      gohash/hash     11.268s
 
 ```
+
+CPU:
+```
+      flat  flat%   sum%        cum   cum%
+     3.55s 44.88% 44.88%      5.22s 65.99%  gohash/hash.SHA1
+     1.17s 14.79% 59.67%      1.17s 14.79%  runtime.memmove
+     0.71s  8.98% 68.65%      0.71s  8.98%  crypto/sha1.blockAVX2
+     0.53s  6.70% 75.35%      0.53s  6.70%  runtime.procyield
+     0.51s  6.45% 81.80%      0.51s  6.45%  runtime.cgocall
+     0.49s  6.19% 87.99%      0.49s  6.19%  runtime.stdcall3
+     0.31s  3.92% 91.91%      0.31s  3.92%  runtime.memclrNoHeapPointers
+     0.20s  2.53% 94.44%      0.20s  2.53%  gohash/hash.cyclicLeftShift (inline)
+     0.12s  1.52% 95.95%      0.12s  1.52%  runtime.stdcall1
+     0.05s  0.63% 96.59%      0.05s  0.63%  runtime.writeHeapBits.flush
+
+```
+
+Memory:
+
+![memory](./docs/imgs/memory.png)
+
+```
+Showing nodes accounting for 9325.77MB, 99.43% of 9379.58MB total
+Dropped 21 nodes (cum <= 46.90MB)
+      flat  flat%   sum%        cum   cum%
+ 6919.06MB 73.77% 73.77%  6919.06MB 73.77%  gohash/hash.SHA1
+ 2337.66MB 24.92% 98.69%  2337.66MB 24.92%  os.ReadFile
+   67.04MB  0.71% 99.40%   200.80MB  2.14%  gohash/hash.Test_CompareWithCryptoSHA1Lib
+       2MB 0.021% 99.43%  6924.06MB 73.82%  gohash/hash.(*Hash).New
+         0     0% 99.43%  1165.73MB 12.43%  gohash/hash.BenchmarkLibSHA1
+         0     0% 99.43%  8004.25MB 85.34%  gohash/hash.BenchmarkMySHA1
+         0     0% 99.43%  9169.98MB 97.77%  testing.(*B).run1.func1
+         0     0% 99.43%  9169.98MB 97.77%  testing.(*B).runN
+         0     0% 99.43%   206.99MB  2.21%  testing.tRunner
+```
