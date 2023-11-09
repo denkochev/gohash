@@ -1,0 +1,2143 @@
+positions: instr line
+events: cpu(ms)
+
+ob=(1) C:\Users\ddkoc\AppData\Local\Temp\go-build170982607\b001\hash.test.exe
+fl=(1) C:\Program Files\Go\src\runtime\memmove_amd64.s
+fn=(1) runtime.memmove
+0xd8b9d3 432 1050
+
+ob=(1)
+fl=(2) C:\Program Files\Go\src\runtime\asm_amd64.s
+fn=(2) runtime.procyield
+-5869 779 530
+
+ob=(1)
+fl=(3) C:\Program Files\Go\src\runtime\cgocall.go
+fn=(3) runtime.cgocall
+-414569 157 510
+
+ob=(1)
+fl=(4) C:\Program Files\Go\src\runtime\os_windows.go
+fn=(4) runtime.stdcall3
++200344 1087 490
+
+ob=(1)
+fl=(5) C:\Program Files\Go\src\runtime\memclr_amd64.s
+fn=(5) runtime.memclrNoHeapPointers
++218469 140 190
+
+ob=(1)
+fl=(6) D:\Projects\Distributed_Labs\gohash\hash\sha1.go
+fn=(6) gohash/hash.SHA1
++658122 47 190
++81 53 140
+-1680 8 130
++1568 48 130
++19 47 130
+
+ob=(1)
+fl=(4)
+fn=(7) runtime.stdcall1
+-876835 1069 120
+
+ob=(1)
+fl=(6)
+fn=(6)
++875235 8 120
++1714 56 120
+
+ob=(1)
+fl=(5)
+fn=(5)
+-658257 127 110
+
+ob=(1)
+fl=(6)
+fn=(6)
++658187 70 110
+-1423 14 100
++1430 70 100
++53 53 100
++111 62 100
+-1805 17 90
++214 29 90
+
+ob=(1)
+fl=(6)
+fn=(8) gohash/hash.cyclicLeftShift
++1406 122 90
+
+ob=(1)
+fl=(6)
+fn=(6)
++136 59 90
++67 63 90
+-1841 14 80
++1573 48 80
++329 37 80
+-258 70 70
+
+ob=(1)
+fl=(6)
+fn=(8)
++22 122 70
+
+ob=(1)
+fl=(6)
+fn=(6)
++27 71 70
++94 60 70
++68 63 70
++32 65 70
+-218 75 60
++9 53 60
++8 70 50
+
+ob=(1)
+fl=(4)
+fn=(9) runtime.stdcall2
+-876785 1078 40
+
+ob=(1)
+fl=(6)
+fn=(8)
++876704 122 40
+
+ob=(1)
+fl=(6)
+fn=(6)
++42 70 40
++36 72 40
++6 73 40
++64 70 40
+
+ob=(1)
+fl=(7) C:\Program Files\Go\src\runtime\mbitmap.go
+fn=(10) runtime.writeHeapBits.flush
+0xd34df6 902 30
+
+ob=(1)
+fl=(1)
+fn=(1)
++355246 419 30
++16 426 30
++10 428 30
+
+ob=(1)
+fl=(6)
+fn=(6)
++654938 10 30
++1478 41 30
++19 40 30
++4 40 30
++56 48 30
++37 70 30
++7 70 30
++160 70 30
++71 70 30
+
+ob=(1)
+fl=(8) C:\Program Files\Go\src\runtime\preempt.go
+fn=(11) runtime.suspendG
+-859673 247 20
+
+ob=(1)
+fl=(1)
+fn=(1)
++202884 424 20
+
+ob=(1)
+fl=(9) C:\Program Files\Go\src\crypto\sha1\sha1block_amd64.s
+fn=(12) crypto/sha1.blockAVX2
++643909 1456 20
++954 1456 20
+
+ob=(1)
+fl=(6)
+fn=(6)
++11616 41 20
++50 48 20
++43 53 20
++41 82 20
++10 53 20
++22 73 20
++14 57 20
++14 70 20
++28 60 20
++6 60 20
++3 37 20
++54 63 20
++30 70 20
+
+ob=(1)
+fl=(10) C:\Program Files\Go\src\runtime\lock_sema.go
+fn=(13) runtime.lock2
+0xd2bb2a 38 10
+
+ob=(1)
+fl=(10)
+fn=(14) runtime.unlock2
++587 108 10
+
+ob=(1)
+fl=(11) C:\Program Files\Go\src\runtime\map_fast64.go
+fn=(15) runtime.mapaccess1_fast64
++22648 18 10
++71 29 10
+
+ob=(1)
+fl=(7)
+fn=(10)
++14186 905 10
++73 894 10
+
+ob=(1)
+fl=(12) C:\Program Files\Go\src\runtime\mheap.go
+fn=(16) runtime.spanClass.sizeclass
++5102 582 10
+
+ob=(1)
+fl=(13) C:\Program Files\Go\src\runtime\mpagealloc.go
+fn=(17) runtime.chunkIdx.l2
++52133 137 10
+
+ob=(1)
+fl=(14) C:\Program Files\Go\src\runtime\mgcscavenge.go
+fn=(18) runtime.(*pallocData).findScavengeCandidate
++1304 921 10
++401 961 10
+
+ob=(1)
+fl=(12)
+fn=(19) runtime.(*mheap).setSpans
++18927 1009 10
+
+ob=(1)
+fl=(15) C:\Program Files\Go\src\runtime\mpallocbits.go
+fn=(20) runtime.(*pageBits).setRange
++22958 30 10
+
+ob=(1)
+fl=(4)
+fn=(21) runtime.stdcall4
++34517 1096 10
+
+ob=(1)
+fl=(8)
+fn=(11)
++17057 247 10
+
+ob=(1)
+fl=(16) C:\Program Files\Go\src\runtime\proc.go
+fn=(22) runtime.gopark
++7416 399 10
+
+ob=(1)
+fl=(16)
+fn=(23) runtime.execute
++19293 2850 10
+
+ob=(1)
+fl=(16)
+fn=(24) runtime.findRunnable
++762 3039 10
+
+ob=(1)
+fl=(16)
+fn=(25) runtime.updateTimerPMask
++30184 6078 10
+
+ob=(1)
+fl=(17) C:\Program Files\Go\src\runtime\time.go
+fn=(26) runtime.resetForSleep
++55385 202 10
+
+ob=(1)
+fl=(17)
+fn=(27) runtime.siftupTimer
++8357 1074 10
+
+ob=(1)
+fl=(18) C:\Program Files\Go\src\runtime\mstats.go
+fn=(28) runtime.(*sysMemStat).load
++44797 641 10
+
+ob=(1)
+fl=(5)
+fn=(5)
++34958 94 10
+
+ob=(1)
+fl=(1)
+fn=(1)
++1762 433 10
+
+ob=(1)
+fl=(19) C:\Program Files\Go\src\runtime\pprof\map.go
+fn=(29) runtime/pprof.(*profMap).lookup
++564040 45 10
++9 46 10
+
+ob=(1)
+fl=(9)
+fn=(12)
++75950 1456 10
++73 1456 10
++50 1456 10
++17 1456 10
++128 1456 10
++22 1456 10
++37 1456 10
++44 1456 10
++37 1456 10
++32 1456 10
++40 1456 10
++82 1456 10
++25 1456 10
++15 1456 10
++125 1456 10
++36 1456 10
++343 1456 10
++145 1456 10
++168 1456 10
++77 1456 10
++104 1456 10
++78 1456 10
++85 1456 10
++111 1456 10
++65 1456 10
++23 1456 10
++62 1456 10
++30 1456 10
++91 1456 10
++258 1456 10
++42 1456 10
++235 1456 10
++3 1456 10
++174 1456 10
++109 1456 10
++93 1456 10
++88 1456 10
++8 1456 10
++84 1456 10
++119 1456 10
++140 1456 10
++211 1456 10
++199 1456 10
++41 1456 10
++76 1456 10
++36 1456 10
++34 1456 10
++243 1456 10
++53 1456 10
++2 1456 10
++32 1456 10
++67 1456 10
++73 1456 10
++248 1456 10
++137 1456 10
++73 1456 10
++47 1456 10
++103 1456 10
++9 1456 10
++60 1456 10
++145 1456 10
++58 1456 10
++159 1456 10
++16 1456 10
++142 1456 10
++158 1456 10
++127 1456 10
+
+ob=(1)
+fl=(6)
+fn=(6)
++8941 10 10
++24 10 10
++55 11 10
++32 14 10
++14 14 10
++922 37 10
++18 37 10
++32 37 10
++15 38 10
++23 38 10
++34 89 10
++242 41 10
++3 41 10
++23 40 10
++29 48 10
++92 37 10
++59 72 10
++5 57 10
++3 57 10
++5 57 10
++16 70 10
++8 58 10
++9 59 10
++32 37 10
++28 63 10
++23 70 10
++32 66 10
+
+ob=(1)
+fl=(10)
+fn=(13)
+0xd2bca8 88 0
+cfl=(4)
+cfn=(30) runtime.semasleep
+calls=0 -880273 792
+* * 20
+
+ob=(1)
+fl=(10)
+fn=(31) runtime.notewakeup
++444 161 0
+cfl=(4)
+cfn=(32) runtime.semawakeup
+calls=0 +169628 844
+* * 110
+
+ob=(1)
+fl=(20) C:\Program Files\Go\src\runtime\malloc.go
+fn=(33) runtime.(*mcache).nextFree
++4832 925 0
+cfl=(21) C:\Program Files\Go\src\runtime\mcache.go
+cfn=(34) runtime.(*mcache).refill
+calls=0 +40366 182
+* * 10
+
+ob=(1)
+fl=(20)
+fn=(35) runtime.mallocgc
++1475 1112 0
+cfl=(20)
+cfn=(33)
+calls=0 * 925
+* * 10
++93 1116 0
+cfl=(5)
+cfn=(5)
+calls=0 +384082 127
+* * 20
+cfl=(5)
+cfn=(5)
+calls=0 +383983 94
+* * 10
++81 1123 0
+cfl=(21)
+cfn=(36) runtime.(*mcache).allocLarge
+calls=0 +34570 255
+* * 50
+cfl=(21)
+cfn=(36)
+calls=0 +34368 234
+* * 10
++488 1220 0
+cfl=(20)
+cfn=(37) runtime.memclrNoHeapPointersChunked
+calls=0 +1039 1316
+* * 40
+
+ob=(1)
+fl=(20)
+fn=(37)
++551 1316 0
+cfl=(5)
+cfn=(5)
+calls=0 +383420 127
+* * 40
+
+ob=(1)
+fl=(20)
+fn=(38) runtime.newarray
++224 1346 0
+cfl=(20)
+cfn=(35)
+calls=0 -1120 1116
+* * 20
+cfl=(20)
+cfn=(35)
+calls=0 -1213 1112
+* * 10
+
+ob=(1)
+fl=(22) C:\Program Files\Go\src\runtime\map.go
+fn=(39) runtime.makeBucketArray
++3528 364 0
+cfl=(20)
+cfn=(38)
+calls=0 * 1346
+* * 30
+
+ob=(1)
+fl=(22)
+fn=(40) runtime.hashGrow
++6242 1068 0
+cfl=(22)
+cfn=(39)
+calls=0 * 364
+* * 30
+
+ob=(1)
+fl=(11)
+fn=(41) runtime.mapassign_fast64
++5898 157 0
+cfl=(22)
+cfn=(40)
+calls=0 * 1068
+* * 30
+
+ob=(1)
+fl=(7)
+fn=(42) runtime.(*mspan).initHeapBits
++12332 734 0
+cfl=(7)
+cfn=(10)
+calls=0 +13342 902
+* * 30
+cfl=(7)
+cfn=(10)
+calls=0 +13254 905
+* * 10
+cfl=(7)
+cfn=(10)
+calls=0 +13327 894
+* * 10
+
+ob=(1)
+fl=(21)
+fn=(34)
++4622 182 0
+cfl=(23) C:\Program Files\Go\src\runtime\mcentral.go
+cfn=(43) runtime.(*mcentral).cacheSpan
+calls=0 +6097 83
+* * 10
+
+ob=(1)
+fl=(21)
+fn=(36)
++402 234 0
+cfl=(12)
+cfn=(44) runtime.(*mheap).alloc
+calls=0 +73864 962
+* * 10
++202 255 0
+cfl=(7)
+cfn=(42)
+calls=0 -5024 734
+* * 50
+
+ob=(1)
+fl=(23)
+fn=(43)
++871 83 0
+cfl=(12)
+cfn=(16)
+calls=0 +871 582
+* * 10
+
+ob=(1)
+fl=(24) C:\Program Files\Go\src\runtime\mem_windows.go
+fn=(45) runtime.sysUnusedOS
++2505 33 0
+cfl=(4)
+cfn=(4)
+calls=0 +130112 1087
+* * 490
+
+ob=(1)
+fl=(24)
+fn=(46) runtime.sysUsedOS
++634 74 0
+cfl=(4)
+cfn=(21)
+calls=0 +127735 1096
+* * 10
+
+ob=(1)
+fl=(25) C:\Program Files\Go\src\runtime\mgc.go
+fn=(47) runtime.gcBgMarkWorker
++19134 1353 0
+cfl=(2)
+cfn=(48) runtime.systemstack
+calls=0 +334160 509
+* * 560
+
+ob=(1)
+fl=(25)
+fn=(49) runtime.gcBgMarkWorker.func2
++878 1366 0
+cfl=(26) C:\Program Files\Go\src\runtime\mgcmark.go
+cfn=(50) runtime.gcDrain
+calls=0 +15238 1069
+* * 590
+
+ob=(1)
+fl=(26)
+fn=(51) runtime.markroot
++6467 214 0
+cfl=(26)
+cfn=(52) runtime.markroot.func1
+calls=0 +7300 232
+* * 590
+
+ob=(1)
+fl=(26)
+fn=(52)
++833 232 0
+cfl=(8)
+cfn=(11)
+calls=0 +117663 247
+* * 530
+cfl=(8)
+cfn=(11)
+calls=0 +117264 231
+* * 30
+cfl=(8)
+cfn=(11)
+calls=0 +117664 247
+* * 20
+cfl=(8)
+cfn=(11)
+calls=0 +117679 247
+* * 10
+
+ob=(1)
+fl=(26)
+fn=(50)
++7060 1069 0
+cfl=(26)
+cfn=(51)
+calls=0 -833 214
+* * 590
+
+ob=(1)
+fl=(14)
+fn=(53) runtime.(*scavengerState).wake
++12091 453 0
+cfl=(16)
+cfn=(54) runtime.injectglist
+calls=0 +143040 3542
+* * 30
++13 455 0
+cfl=(10)
+cfn=(55) runtime.unlock
+calls=0 +13 96
+* * 10
+
+ob=(1)
+fl=(10)
+fn=(55)
+* 96 0
+cfl=(27) C:\Program Files\Go\src\runtime\lockrank_off.go
+cfn=(56) runtime.unlockWithRank
+calls=0 * 34
+* * 10
+
+ob=(1)
+fl=(27)
+fn=(56)
+* 34 0
+cfl=(10)
+cfn=(14)
+calls=0 -91695 108
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(57) runtime.(*scavengerState).sleep
++359 509 0
+cfl=(10)
+cfn=(58) runtime.lock
+calls=0 +359 35
+* * 10
+
+ob=(1)
+fl=(10)
+fn=(58)
+* 35 0
+cfl=(27)
+cfn=(59) runtime.lockWithRank
+calls=0 * 24
+* * 10
+
+ob=(1)
+fl=(27)
+fn=(59)
+* 24 0
+cfl=(10)
+cfn=(13)
+calls=0 -92641 38
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(60) runtime.(*scavengerState).run
++518 585 0
+cfl=(14)
+cfn=(61) runtime.(*scavengerState).init.func3
+calls=0 +263517 407
+* * 10
++30 602 0
+cfl=(14)
+cfn=(62) runtime.(*scavengerState).init.func2
+calls=0 +262875 395
+* * 40
+
+ob=(1)
+fl=(14)
+fn=(63) runtime.bgscavenge
++376 656 0
+cfl=(14)
+cfn=(60)
+calls=0 * 602
+* * 40
+cfl=(14)
+cfn=(60)
+calls=0 -30 585
+* * 10
++44 662 0
+cfl=(14)
+cfn=(57)
+calls=0 -924 509
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(64) runtime.(*pageAlloc).scavenge
++241 682 0
+cfl=(2)
+cfn=(48)
+calls=0 +286357 509
+* * 40
+
+ob=(1)
+fl=(14)
+fn=(65) runtime.(*pageAlloc).scavenge.func1
++170 683 0
+cfl=(14)
+cfn=(66) runtime.(*pageAlloc).scavengeOne
+calls=0 +1289 784
+* * 490
+cfl=(14)
+cfn=(66)
+calls=0 +983 758
+* * 20
+cfl=(14)
+cfn=(66)
+calls=0 +950 758
+* * 10
+cfl=(14)
+cfn=(66)
+calls=0 +1123 769
+* * 10
+
+ob=(1)
+fl=(13)
+fn=(67) runtime.(*pageAlloc).chunkOf
++780 350 0
+cfl=(13)
+cfn=(17)
+calls=0 +780 137
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(66)
+* 758 0
+cfl=(13)
+cfn=(67)
+calls=0 * 350
+* * 10
++33 758 0
+cfl=(14)
+cfn=(18)
+calls=0 +1304 921
+* * 10
+cfl=(14)
+cfn=(18)
+calls=0 +1705 961
+* * 10
++140 769 0
+cfl=(15)
+cfn=(68) runtime.(*pallocData).allocRange
+calls=0 +45836 436
+* * 10
++166 784 0
+cfl=(28) C:\Program Files\Go\src\runtime\mem.go
+cfn=(69) runtime.sysUnused
+calls=0 +166 62
+* * 490
+
+ob=(1)
+fl=(28)
+fn=(69)
+* 62 0
+cfl=(24)
+cfn=(45)
+calls=0 -49967 33
+* * 490
+
+ob=(1)
+fl=(12)
+fn=(44)
++19917 962 0
+cfl=(2)
+cfn=(48)
+calls=0 +284827 509
+* * 10
+
+ob=(1)
+fl=(12)
+fn=(70) runtime.(*mheap).alloc.func1
++161 968 0
+cfl=(12)
+cfn=(71) runtime.(*mheap).allocSpan
+calls=0 +2218 1344
+* * 10
+cfl=(12)
+cfn=(71)
+calls=0 +2284 1351
+* * 10
+
+ob=(1)
+fl=(12)
+fn=(71)
++2057 1344 0
+cfl=(12)
+cfn=(72) runtime.(*mheap).initSpan
+calls=0 +2846 1440
+* * 10
++66 1351 0
+cfl=(28)
+cfn=(73) runtime.sysUsed
+calls=0 +66 77
+* * 10
+
+ob=(1)
+fl=(28)
+fn=(73)
+* 77 0
+cfl=(24)
+cfn=(46)
+calls=0 -71534 74
+* * 10
+
+ob=(1)
+fl=(12)
+fn=(72)
++723 1440 0
+cfl=(12)
+cfn=(19)
+calls=0 -1908 1009
+* * 10
+
+ob=(1)
+fl=(15)
+fn=(74) runtime.(*pallocBits).allocRange
++22606 352 0
+cfl=(15)
+cfn=(20)
+calls=0 +20327 30
+* * 10
+
+ob=(1)
+fl=(15)
+fn=(68)
+* 436 0
+cfl=(15)
+cfn=(74)
+calls=0 * 352
+* * 10
+
+ob=(1)
+fl=(4)
+fn=(30)
++28701 792 0
+cfl=(4)
+cfn=(9)
+calls=0 +31982 1078
+* * 20
+
+ob=(1)
+fl=(4)
+fn=(32)
++640 844 0
+cfl=(4)
+cfn=(7)
+calls=0 +3153 1069
+* * 110
+
+ob=(1)
+fl=(4)
+fn=(75) runtime.preemptM
++5306 1338 0
+cfl=(4)
+cfn=(7)
+calls=0 +2513 1069
+* * 10
++71 1357 0
+cfl=(4)
+cfn=(9)
+calls=0 -2665 1078
+* * 20
+
+ob=(1)
+fl=(8)
+fn=(11)
++14162 231 0
+cfl=(4)
+cfn=(75)
+calls=0 * 1357
+* * 20
+cfl=(4)
+cfn=(75)
+calls=0 -71 1338
+* * 10
++399 247 0
+cfl=(2)
+cfn=(2)
+calls=0 +197455 779
+* * 530
+
+ob=(1)
+fl=(16)
+fn=(76) runtime.startm
++24258 2649 0
+cfl=(10)
+cfn=(31)
+calls=0 -189122 161
+* * 110
+
+ob=(1)
+fl=(16)
+fn=(77) runtime.wakep
++1251 2760 0
+cfl=(16)
+cfn=(76)
+calls=0 * 2649
+* * 80
+
+ob=(1)
+fl=(16)
+fn=(24)
++1640 2912 0
+cfl=(16)
+cfn=(78) runtime.checkTimers
+calls=0 +8849 3693
+* * 40
++529 2962 0
+cfl=(10)
+cfn=(58)
+calls=0 +529 35
+* * 20
+
+ob=(1)
+fl=(10)
+fn=(58)
+* 35 0
+cfl=(27)
+cfn=(59)
+calls=0 * 24
+* * 20
+
+ob=(1)
+fl=(27)
+fn=(59)
+* 24 0
+cfl=(10)
+cfn=(13)
+calls=0 -217244 88
+* * 20
+
+ob=(1)
+fl=(16)
+fn=(24)
++913 3081 0
+cfl=(16)
+cfn=(79) runtime.pidleput
+calls=0 +30297 6105
+* * 10
+
+ob=(1)
+fl=(16)
+fn=(80) runtime.wakeNetPoller
++3904 3448 0
+cfl=(16)
+cfn=(77)
+calls=0 -3082 2760
+* * 30
+
+ob=(1)
+fl=(16)
+fn=(81) runtime.resetspinning
++104 3466 0
+cfl=(16)
+cfn=(77)
+calls=0 -6986 2760
+* * 50
+
+ob=(1)
+fl=(16)
+fn=(54)
++671 3542 0
+cfl=(16)
+cfn=(82) runtime.injectglist.func1
+calls=0 +131699 3516
+* * 30
+
+ob=(1)
+fl=(16)
+fn=(83) runtime.schedule
++308 3582 0
+cfl=(16)
+cfn=(24)
+calls=0 -6121 2912
+* * 40
+cfl=(16)
+cfn=(24)
+calls=0 -5592 2962
+* * 20
+cfl=(16)
+cfn=(24)
+calls=0 -5783 3039
+* * 10
+cfl=(16)
+cfn=(24)
+calls=0 -4679 3081
+* * 10
++94 3600 0
+cfl=(16)
+cfn=(81)
+calls=0 -979 3466
+* * 50
++301 3632 0
+cfl=(16)
+cfn=(23)
+calls=0 -6947 2850
+* * 10
+
+ob=(1)
+fl=(16)
+fn=(78)
++385 3693 0
+cfl=(17)
+cfn=(84) runtime.runtimer
+calls=0 +85545 792
+* * 40
+
+ob=(1)
+fl=(16)
+fn=(85) runtime.park_m
++390 3734 0
+cfl=(17)
+cfn=(26)
+calls=0 +78740 204
+* * 40
+cfl=(17)
+cfn=(26)
+calls=0 +78698 202
+* * 10
++124 3745 0
+cfl=(16)
+cfn=(83)
+calls=0 -1170 3582
+* * 80
+cfl=(16)
+cfn=(83)
+calls=0 -1076 3600
+* * 50
+cfl=(16)
+cfn=(83)
+calls=0 -775 3632
+* * 10
+
+ob=(1)
+fl=(16)
+fn=(79)
++23103 6105 0
+cfl=(16)
+cfn=(25)
+calls=0 +22799 6078
+* * 10
+
+ob=(1)
+fl=(29) C:\Program Files\Go\src\runtime\slice.go
+fn=(86) runtime.makeslice
++21515 103 0
+cfl=(20)
+cfn=(35)
+calls=0 -240128 1220
+* * 40
+cfl=(20)
+cfn=(35)
+calls=0 -240697 1116
+* * 10
+
+ob=(1)
+fl=(29)
+fn=(87) runtime.growslice
++1382 266 0
+cfl=(20)
+cfn=(35)
+calls=0 -262131 1123
+* * 60
++29 271 0
+cfl=(5)
+cfn=(5)
+calls=0 +120428 140
+* * 190
+cfl=(5)
+cfn=(5)
+calls=0 +120395 127
+* * 50
++131 281 0
+cfl=(1)
+cfn=(1)
+calls=0 +122024 432
+* * 1050
+cfl=(1)
+cfn=(1)
+calls=0 +121977 419
+* * 30
+cfl=(1)
+cfn=(1)
+calls=0 +121993 426
+* * 30
+cfl=(1)
+cfn=(1)
+calls=0 +122003 428
+* * 30
+cfl=(1)
+cfn=(1)
+calls=0 +121984 424
+* * 20
+cfl=(1)
+cfn=(1)
+calls=0 +122029 433
+* * 10
+
+ob=(1)
+fl=(17)
+fn=(26)
++32066 204 0
+cfl=(17)
+cfn=(88) runtime.resettimer
+calls=0 +32066 555
+* * 40
+
+ob=(1)
+fl=(17)
+fn=(88)
+* 555 0
+cfl=(17)
+cfn=(89) runtime.modtimer
+calls=0 +3604 514
+* * 30
+cfl=(17)
+cfn=(89)
+calls=0 +3491 508
+* * 10
+
+ob=(1)
+fl=(17)
+fn=(90) runtime.doaddtimer
++877 303 0
+cfl=(17)
+cfn=(27)
+calls=0 +8315 1074
+* * 10
+
+ob=(1)
+fl=(17)
+fn=(89)
++2614 508 0
+cfl=(17)
+cfn=(90)
+calls=0 * 303
+* * 10
++113 514 0
+cfl=(16)
+cfn=(80)
+calls=0 -84094 3448
+* * 30
+
+ob=(1)
+fl=(17)
+fn=(84)
++2816 792 0
+cfl=(17)
+cfn=(91) runtime.runOneTimer
+calls=0 +3252 885
+* * 40
+
+ob=(1)
+fl=(17)
+fn=(91)
++436 885 0
+cfl=(14)
+cfn=(92) runtime.(*scavengerState).init.func1
+calls=0 +46408 366
+* * 40
+
+ob=(1)
+fl=(16)
+fn=(82)
++44344 3516 0
+cfl=(16)
+cfn=(76)
+calls=0 -95696 2649
+* * 30
+
+ob=(1)
+fl=(14)
+fn=(92)
++1628 366 0
+cfl=(14)
+cfn=(53)
+calls=0 -261977 453
+* * 30
+cfl=(14)
+cfn=(53)
+calls=0 -261964 455
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(62)
++160 395 0
+cfl=(14)
+cfn=(64)
+calls=0 -262024 682
+* * 40
+
+ob=(1)
+fl=(14)
+fn=(61)
++124 407 0
+cfl=(14)
+cfn=(93) runtime.heapRetained
+calls=0 +124 151
+* * 10
+
+ob=(1)
+fl=(14)
+fn=(93)
+* 151 0
+cfl=(18)
+cfn=(28)
+calls=0 * 641
+* * 10
+
+ob=(1)
+fl=(30) C:\Program Files\Go\src\runtime\syscall_windows.go
+fn=(94) syscall.Syscall6
++18689 488 0
+cfl=(30)
+cfn=(95) syscall.SyscallN
+calls=0 +19102 544
+* * 510
+
+ob=(1)
+fl=(30)
+fn=(95)
++413 544 0
+cfl=(3)
+cfn=(3)
+calls=0 -402412 157
+* * 510
+
+ob=(1)
+fl=(17)
+fn=(96) time.Sleep
++447 195 0
+cfl=(16)
+cfn=(22)
+calls=0 -177880 399
+* * 10
+
+ob=(1)
+fl=(2)
+fn=(97) runtime.mcall
++4141 458 0
+cfl=(16)
+cfn=(85)
+calls=0 -150887 3745
+* * 140
+cfl=(16)
+cfn=(85)
+calls=0 -151011 3734
+* * 50
+
+ob=(1)
+fl=(2)
+fn=(48)
++118 509 0
+cfl=(25)
+cfn=(49)
+calls=0 -314030 1366
+* * 590
+cfl=(14)
+cfn=(65)
+calls=0 -285828 683
+* * 530
+cfl=(12)
+cfn=(70)
+calls=0 -264631 968
+* * 20
+
+ob=(1)
+fl=(31) C:\Program Files\Go\src\syscall\syscall_windows.go
+fn=(98) syscall.Read
++66276 417 0
+cfl=(31)
+cfn=(99) syscall.ReadFile
+calls=0 +66276 438
+* * 510
+
+ob=(1)
+fl=(31)
+fn=(99)
+* 438 0
+cfl=(32) C:\Program Files\Go\src\syscall\zsyscall_windows.go
+cfn=(100) syscall.readFile
+calls=0 +8737 1024
+* * 510
+
+ob=(1)
+fl=(32)
+fn=(100)
++8737 1024 0
+cfl=(30)
+cfn=(94)
+calls=0 -71395 488
+* * 510
+
+ob=(1)
+fl=(33) C:\Program Files\Go\src\internal\poll\fd_windows.go
+fn=(101) internal/poll.(*FD).Read
++86679 422 0
+cfl=(31)
+cfn=(98)
+calls=0 -8737 417
+* * 510
+
+ob=(1)
+fl=(34) C:\Program Files\Go\src\os\file.go
+fn=(102) os.(*File).Read
++7917 118 0
+cfl=(35) C:\Program Files\Go\src\os\file_posix.go
+cfn=(103) os.(*File).read
+calls=0 +7917 29
+* * 510
+
+ob=(1)
+fl=(35)
+fn=(103)
+* 29 0
+cfl=(33)
+cfn=(101)
+calls=0 -7917 422
+* * 510
+
+ob=(1)
+fl=(34)
+fn=(104) os.ReadFile
++1971 738 0
+cfl=(29)
+cfn=(86)
+calls=0 -280137 103
+* * 40
++240 744 0
+cfl=(34)
+cfn=(102)
+calls=0 -1971 118
+* * 510
+
+ob=(1)
+fl=(36) C:\Program Files\Go\src\testing\benchmark.go
+fn=(105) testing.(*B).runN
++173645 193 0
+cfl=(37) D:\Projects\Distributed_Labs\gohash\hash\bench_test.go
+cfn=(106) gohash/hash.BenchmarkMySHA1
+calls=0 +498405 19
+* * 5220
+cfl=(37)
+cfn=(107) gohash/hash.BenchmarkLibSHA1
+calls=0 +498825 30
+* * 710
+cfl=(37)
+cfn=(106)
+calls=0 +498334 14
+* * 340
+cfl=(37)
+cfn=(107)
+calls=0 +498686 26
+* * 210
+
+ob=(1)
+fl=(36)
+fn=(108) testing.(*B).run1.func1
++1676 233 0
+cfl=(36)
+cfn=(105)
+calls=0 * 193
+* * 6480
+
+ob=(1)
+fl=(19)
+fn=(29)
++228930 41 0
+cfl=(11)
+cfn=(15)
+calls=0 -703872 18
+* * 10
+cfl=(11)
+cfn=(15)
+calls=0 -703801 29
+* * 10
++373 69 0
+cfl=(29)
+cfn=(86)
+calls=0 -686599 103
+* * 10
++323 81 0
+cfl=(11)
+cfn=(41)
+calls=0 -932172 157
+* * 30
+
+ob=(1)
+fl=(38) C:\Program Files\Go\src\runtime\pprof\pprof.go
+fn=(109) runtime/pprof.profileWriter
++17154 809 0
+cfl=(17)
+cfn=(96)
+calls=0 -581026 195
+* * 10
++59 811 0
+cfl=(39) C:\Program Files\Go\src\runtime\pprof\proto.go
+cfn=(110) runtime/pprof.(*profileBuilder).addCPUData
+calls=0 +17502 338
+* * 80
+
+ob=(1)
+fl=(39)
+fn=(110)
++17443 338 0
+cfl=(19)
+cfn=(29)
+calls=0 -17213 81
+* * 30
+cfl=(19)
+cfn=(29)
+calls=0 -17909 41
+* * 20
+cfl=(19)
+cfn=(29)
+calls=0 -17536 69
+* * 10
+cfl=(19)
+cfn=(29)
+calls=0 -17028 45
+* * 10
+cfl=(19)
+cfn=(29)
+calls=0 -17019 46
+* * 10
+
+ob=(1)
+fl=(40) C:\Program Files\Go\src\crypto\sha1\sha1.go
+fn=(111) crypto/sha1.(*digest).Write
++33829 137 0
+cfl=(41) C:\Program Files\Go\src\crypto\sha1\sha1block_amd64.go
+cfn=(112) crypto/sha1.block
+calls=0 +34877 29
+* * 710
+
+ob=(1)
+fl=(41)
+fn=(112)
++1048 29 0
+cfl=(9)
+cfn=(12)
+calls=0 +11524 1456
+* * 20
+cfl=(9)
+cfn=(12)
+calls=0 +12478 1456
+* * 20
+cfl=(9)
+cfn=(12)
+calls=0 +7659 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7732 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7782 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7799 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7927 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7949 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +7986 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8030 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8067 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8099 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8139 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8221 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8246 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8261 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8386 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8422 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8765 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +8910 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9078 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9155 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9259 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9337 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9422 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9533 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9598 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9621 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9683 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9713 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +9804 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10062 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10104 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10339 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10342 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10516 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10625 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10718 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10806 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10814 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +10898 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11017 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11157 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11368 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11567 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11608 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11684 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11720 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11754 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +11997 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12050 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12052 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12084 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12151 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12224 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12472 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12609 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12682 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12729 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12832 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12841 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +12901 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13046 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13104 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13263 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13279 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13421 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13579 1456
+* * 10
+cfl=(9)
+cfn=(12)
+calls=0 +13706 1456
+* * 10
+
+ob=(1)
+fl=(42) D:\Projects\Distributed_Labs\gohash\hash\hashAPI.go
+fn=(113) gohash/hash.(*Hash).New
++20901 17 0
+cfl=(6)
+cfn=(6)
+calls=0 +21568 10
+* * 1470
+cfl=(6)
+cfn=(6)
+calls=0 +23104 47
+* * 190
+cfl=(6)
+cfn=(6)
+calls=0 +23185 53
+* * 140
+cfl=(6)
+cfn=(6)
+calls=0 +21505 8
+* * 130
+cfl=(6)
+cfn=(6)
+calls=0 +23073 48
+* * 130
+cfl=(6)
+cfn=(6)
+calls=0 +23092 47
+* * 130
+cfl=(6)
+cfn=(6)
+calls=0 +21492 8
+* * 120
+cfl=(6)
+cfn=(6)
+calls=0 +23206 56
+* * 120
+cfl=(6)
+cfn=(6)
+calls=0 +23136 70
+* * 110
+cfl=(6)
+cfn=(6)
+calls=0 +21713 14
+* * 100
+cfl=(6)
+cfn=(6)
+calls=0 +23143 70
+* * 100
+cfl=(6)
+cfn=(6)
+calls=0 +23196 53
+* * 100
+cfl=(6)
+cfn=(6)
+calls=0 +23307 62
+* * 100
+cfl=(6)
+cfn=(6)
+calls=0 +21502 17
+* * 90
+cfl=(6)
+cfn=(6)
+calls=0 +21716 29
+* * 90
+cfl=(6)
+cfn=(6)
+calls=0 +23122 70
+* * 90
+cfl=(6)
+cfn=(6)
+calls=0 +23258 59
+* * 90
+cfl=(6)
+cfn=(6)
+calls=0 +23325 63
+* * 90
+cfl=(6)
+cfn=(6)
+calls=0 +21484 14
+* * 80
+cfl=(6)
+cfn=(6)
+calls=0 +23057 48
+* * 80
+cfl=(6)
+cfn=(6)
+calls=0 +23386 37
+* * 80
+cfl=(6)
+cfn=(6)
+calls=0 +23128 70
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23150 73
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23177 71
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23271 60
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23339 63
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23371 65
+* * 70
+cfl=(6)
+cfn=(6)
+calls=0 +23153 75
+* * 60
+cfl=(6)
+cfn=(6)
+calls=0 +23162 53
+* * 60
+cfl=(6)
+cfn=(6)
+calls=0 +23170 70
+* * 50
+cfl=(6)
+cfn=(6)
+calls=0 +23089 48
+* * 40
+cfl=(6)
+cfn=(6)
+calls=0 +23131 70
+* * 40
+cfl=(6)
+cfn=(6)
+calls=0 +23167 72
+* * 40
+cfl=(6)
+cfn=(6)
+calls=0 +23173 73
+* * 40
+cfl=(6)
+cfn=(6)
+calls=0 +23237 70
+* * 40
+cfl=(6)
+cfn=(6)
+calls=0 +21524 10
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23002 41
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23021 40
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23025 40
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23081 48
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23118 70
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23125 70
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23285 70
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23356 70
+* * 30
+cfl=(6)
+cfn=(6)
+calls=0 +23046 41
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23096 48
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23139 53
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23180 82
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23190 53
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23212 73
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23226 57
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23240 70
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23268 60
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23274 60
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23277 37
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23331 63
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +23361 70
+* * 20
+cfl=(6)
+cfn=(6)
+calls=0 +21599 10
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +21623 10
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +21678 11
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +21710 14
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +21724 14
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22646 37
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22664 37
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22696 37
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22711 38
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22734 38
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +22768 89
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23010 41
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23013 41
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23036 40
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23065 48
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23157 37
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23216 72
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23221 57
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23224 57
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23229 57
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23245 70
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23253 58
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23262 59
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23294 37
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23322 63
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23345 70
+* * 10
+cfl=(6)
+cfn=(6)
+calls=0 +23377 66
+* * 10
+
+ob=(1)
+fl=(6)
+fn=(6)
++667 10 0
+cfl=(29)
+cfn=(87)
+calls=0 -776187 281
+* * 1170
+cfl=(29)
+cfn=(87)
+calls=0 -776318 271
+* * 240
+cfl=(29)
+cfn=(87)
+calls=0 -776347 266
+* * 60
++1521 48 0
+cfl=(6)
+cfn=(8)
+calls=0 +1521 122
+* * 40
++33 70 0
+cfl=(6)
+cfn=(8)
+calls=0 +33 122
+* * 90
++28 73 0
+cfl=(6)
+cfn=(8)
+calls=0 +28 122
+* * 70
+
+ob=(1)
+fl=(37)
+fn=(106)
++704 14 0
+cfl=(34)
+cfn=(104)
+calls=0 -497630 744
+* * 340
++71 19 0
+cfl=(42)
+cfn=(113)
+calls=0 -2953 17
+* * 5220
+
+ob=(1)
+fl=(37)
+fn=(107)
++281 26 0
+cfl=(34)
+cfn=(104)
+calls=0 -498405 744
+* * 170
+cfl=(34)
+cfn=(104)
+calls=0 -498645 738
+* * 40
++139 30 0
+cfl=(40)
+cfn=(111)
+calls=0 -25254 137
+* * 710
